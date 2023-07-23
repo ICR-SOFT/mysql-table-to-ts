@@ -7,7 +7,7 @@ This CLI tool generates TypeScript classes based on the structure of a MySQL tab
 To install the CLI tool, run the following npm command:
 
 ```bash
-npm install -g mysql-to-ts-class-cli
+npm install -g mtts
 ```
 
 ### Usage
@@ -15,7 +15,7 @@ npm install -g mysql-to-ts-class-cli
 To run the CLI tool, use a command in the following format:
 
 ```bash
-mysql-to-ts-class-cli --host <host> --database <database> --user <user> --password <password> --table <table> --output <output path> --filename <output filename>
+mtts --host <host> --database <database> --user <user> --password <password> --table <table> --output <output path> --filename <output filename>
 ```
 
 Option descriptions:
@@ -30,7 +30,7 @@ Option descriptions:
 
 ### Example
 ```bash
-mysql-to-ts-class-cli --host localhost --database myDB --user myUser --password myPassword --table myTable --output ./models --filename myTableModel
+mtts --host localhost --database myDB --user myUser --password myPassword --table myTable --output ./models --filename myTableModel
 ```
 
 The above command connects to the myDB database located at localhost using myUser and myPassword, generates a TypeScript class based on the structure of the myTable table, and saves the file as ./models/myTableModel.ts.
