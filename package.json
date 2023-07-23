@@ -1,5 +1,5 @@
 {
-  "name": "mysql-table-to-ts",
+  "name": "mtts",
   "description": "This CLI tool generates TypeScript classes based on the structure of a MySQL table. The resulting classes include information about primary keys, indexes, and foreign keys, allowing you to leverage this information in your TypeScript project.",
   "version": "1.0.0",
   "main": "index.ts",
